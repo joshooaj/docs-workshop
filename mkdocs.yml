@@ -33,6 +33,18 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+  features:
+    - content.code.copy           # Add a "copy" button to all code blocks
+    - content.code.annotate       # Enable the use of interactive annotations (+) in code blocks
+    - content.tabs.link           # Add anchors
+    - toc.integrate               # Integrate table-of-contents into the left-side navigation. ToC is normally rendered on the right
+    - toc.follow                  # Scrolls the sidebar so that the active anchor is always visible
+    - navigation.instant          # Page loads like a single page application (SPA) so clicks are "instant"
+    - navigation.instant.progress # On initial page load, a progress ring is shown to indicate when the page load has fully completed
+    - navigation.tabs             # Moves top-level navigation items to the header
+    - navigation.tabs.sticky      # Header navigation sticks to the top of the viewport
+    - navigation.top              # Adds a "Back to the top" button once you've scrolled down a bit
+    - navigation.tracking         # Automatically update the url in the address bar based on the highlighted section of the ToC
 
 plugins:
   - search
@@ -45,6 +57,8 @@ plugins:
         background_color: "#4d9bea"
 
 markdown_extensions:
+  - toc:
+      permalink: true # Adds a link icon to headings
   - attr_list
   - admonition
   - md_in_html

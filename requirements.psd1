@@ -25,7 +25,7 @@
     }
     'PythonRequirements' = @{
         DependencyType = 'Command'
-        Source         = 'pip install -qr requirements.txt --cache-dir .cache/pip/'
+        Source         = 'pip install -qr requirements.txt --cache-dir .cache/pip/ --force-reinstall'
     }
     'DotnetCLI'          = @{
         DependencyType = 'DotnetSdk'

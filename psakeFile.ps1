@@ -25,7 +25,7 @@ task Serve -depends Build {
         throw "Cannot find the 'mkdocs' command. Install python and mkdocs, or consider using the dev container."
     }
     exec {
-        mkdocs serve -a 0.0.0.0:8000
+        mkdocs serve -a 0.0.0.0:8001
     }
 }
 

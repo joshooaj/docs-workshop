@@ -19,7 +19,7 @@
 	},
 
 	// Port when running "./build.ps1 -Task Serve" or "mkdocs serve"
-	"forwardPorts": [8000],
+	"forwardPorts": [8000, 8001],
 
 	// Use a non-root user inside devcontainer
 	"remoteUser": "vscode",
