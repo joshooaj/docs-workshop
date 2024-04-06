@@ -16,8 +16,8 @@
     PrivateData       = @{
         PSData = @{
             # Tags       = @()
-            # LicenseUri = 'https://github.com/joshooaj/...'
-            # ProjectUri = 'https://github.com/joshooaj/...'
+            LicenseUri = 'https://github.com/joshooaj/docs-workshop/blob/main/LICENSE'
+            ProjectUri = 'https://github.com/joshooaj/docs-workshop'
             # IconUri = ''
             # ReleaseNotes = ''
             # Prerelease = ''

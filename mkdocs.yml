@@ -1,7 +1,7 @@
 site_name: Building Beautiful Docs Workshop
 site_description: A small sample project demonstrating one way to generate a docs site for your PowerShell modules.
 site_dir: Output/site
-repo_url: https://github.com/joshooaj/PSHSummit24Workshop
+repo_url: https://github.com/joshooaj/docs-workshop
 remote_branch: gh-pages
 
 theme:
