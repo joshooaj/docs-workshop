@@ -10,3 +10,5 @@ testResults.xml
 .docker/
 
 tests/out/
+
+sandbox/
