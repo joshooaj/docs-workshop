@@ -8,46 +8,38 @@ schema: 2.0.0
 # Find-DadJoke
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Finds a matching dad joke from icanhazdadjoke.com.
 
 ## SYNTAX
 
 ```
-Find-DadJoke [[-Term] <String>] [[-Format] <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Find-DadJoke [[-Term] <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The `Find-DadJoke` cmdlet finds a dad joke from icanhazdadjoke.com which matches the provided term(s), or if no terms
+are provided, all jokes are returned.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+Find-DadJoke
 ```
 
-{{ Add example description here }}
+Gets all dad jokes the api has to offer.
+
+### Example 1
+```powershell
+Find-DadJoke -Term cat
+```
+
+Finds dad jokes about cats 🤷‍♂️
 
 ## PARAMETERS
 
-### -Format
-{{ Fill Format Description }}
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-Accepted values: json, text
-
-Required: False
-Position: 1
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Term
-{{ Fill Term Description }}
+A word, or words, to search for in the catalog of dad jokes.
 
 ```yaml
 Type: String
@@ -62,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProgressAction
-{{ Fill ProgressAction Description }}
+This common parameter is new in PowerShell 7.4, and PlatyPS v0.14.2 thinks it's one of your function's parameters. Remind me to show you how you can work around this until v2 is released.
 
 ```yaml
 Type: ActionPreference

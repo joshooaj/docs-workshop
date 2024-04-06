@@ -28,5 +28,5 @@
 	"postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 
 	// Take ownership of bind-mounted files which may appear owned by "root", then bootstrap the environment to ensure dependencies are installed
-	"postStartCommand": "pwsh -c 'sudo chown -R \"$(id -u):$(id -g)\" $PWD; ./build.ps1 -Task Init -Bootstrap'"
+	"postStartCommand": "pwsh -c 'sudo chown -R \"$(id -u):$(id -g)\" $PWD; ./build.ps1 -Task Init -Bootstrap'; sudo ln -s (Resolve-Path ./.cache/dotnet/dotnet) /usr/local/bin/dotnet"
 }

@@ -1,7 +1,7 @@
 function Get-DadJoke {
     [CmdletBinding()]
     [Alias('Invoke-StevenJudd')]
-    [OutputType([string])]
+    [OutputType([DadJoke])]
     param (
         [Parameter()]
         [Alias('Id')]
@@ -18,11 +18,16 @@ function Get-DadJoke {
             }
         }
         try {
-            Invoke-RestMethod @irmParams
+            while ([datetime]::Now -lt $script:api.WaitUntil) {
+                Write-Verbose 'Waiting a bit between requests. Be kind to free APIs <3'
+                Start-Sleep -Milliseconds 500
+            }
+            [DadJoke](Invoke-RestMethod @irmParams | Select-Object Id, Joke)
+            $script:api.WaitUntil = [datetime]::Now.Add($script:api.Interval)
         } catch {
             Write-Error -ErrorRecord $_
             Write-Warning "Looks like maybe we couldn't reach $($script:api.BaseUri). Let's check the cache..."
-            $script:dadjokes | Get-Random
+            [DadJoke]($script:dadjokes | Get-Random | Select-Object Id, Joke)
         }
     }
 }

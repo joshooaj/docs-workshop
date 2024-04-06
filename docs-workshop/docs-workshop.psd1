@@ -12,6 +12,7 @@
     CmdletsToExport   = @()
     VariablesToExport = @()
     AliasesToExport   = '*'
+    ScriptsToProcess  = @('Classes/DadJoke.ps1')
     PrivateData       = @{
         PSData = @{
             # Tags       = @()

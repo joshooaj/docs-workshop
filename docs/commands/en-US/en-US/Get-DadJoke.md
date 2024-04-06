@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-DadJoke
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get a random dad joke, or a specific joke by Id from icanhazdadjoke.com.
 
 ## SYNTAX
 
@@ -17,21 +17,30 @@ Get-DadJoke [[-JokeId] <String>] [-ProgressAction <ActionPreference>] [<CommonPa
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+The `Get-DadJoke` cmdlet gets a random dad joke from icanhazdadjoke.com, it but won't help you "get" the joke. Get it?
+
+I know, Steven Judd is _much_ better at this 😅
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+Get-DadJoke
 ```
 
-{{ Add example description here }}
+Gets a random dad joke.
+
+### Example 2
+```powershell
+Get-DadJoke -Id DtWSnydN7h
+```
+
+Gets a joke about "shells".
 
 ## PARAMETERS
 
 ### -JokeId
-{{ Fill JokeId Description }}
+The Id of a specific dad joke to get.
 
 ```yaml
 Type: String
@@ -46,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProgressAction
-{{ Fill ProgressAction Description }}
+This common parameter is new in PowerShell 7.4, and PlatyPS v0.14.2 thinks it's one of your function's parameters. Remind me to show you how you can work around this until v2 is released.
 
 ```yaml
 Type: ActionPreference

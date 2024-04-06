@@ -23,6 +23,8 @@ $script:api = @{
         text = 'text/plain'
         html = 'text/html'
     }
+    WaitUntil = [datetime]::MinValue
+    Interval  = [timespan]::FromSeconds(1)
 }
 
 $script:dadjokes = [io.file]::ReadAllText((Resolve-Path $PSScriptRoot/cache/dadjokes.json)) | ConvertFrom-Json

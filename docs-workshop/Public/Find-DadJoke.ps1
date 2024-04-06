@@ -1,14 +1,10 @@
 function Find-DadJoke {
     [CmdletBinding()]
-    [OutputType([string])]
+    [OutputType([DadJoke])]
     param (
         [Parameter()]
         [string]
-        $Term = '',
-        [Parameter()]
-        [ValidateSet('json', 'text')]
-        [string]
-        $Format = 'json'
+        $Term = ''
     )
 
     process {
@@ -28,10 +24,15 @@ function Find-DadJoke {
         do {
             try {
                 $irmParams.Uri = buildUri -BaseUri $script:api.BaseUri -Path 'search' -Query $query
-                $page = Invoke-RestMethod @irmParams -Verbose:$false
+                while ([datetime]::Now -lt $script:api.WaitUntil) {
+                    Write-Verbose 'Waiting a bit between requests. Be kind to free APIs <3'
+                    Start-Sleep -Milliseconds 500
+                }
+                $page = Invoke-RestMethod @irmParams
+                $script:api.WaitUntil = [datetime]::Now.Add($script:api.Interval)
                 Write-Verbose ("current_page = {0}; next_page = {1}; total_pages = {2}; total_jokes = {3}" -f $page.current_page, $page.next_page, $page.total_pages, $page.total_jokes)
                 if ($page.results.Count -gt 0) {
-                    $page.results
+                    [DadJoke[]]$page.results
                 }
             } catch {
                 Write-Error -ErrorRecord $_

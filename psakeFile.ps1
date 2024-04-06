@@ -2,7 +2,7 @@ properties {
     & dotnet tool restore
     # Set this to $true to create a module with a monolithic PSM1
     $PSBPreference.Build.CompileModule = $true
-    $PSBPreference.Build.CopyDirectories = 'cache'
+    $PSBPreference.Build.CopyDirectories = 'Classes', 'cache'
     $PSBPreference.Docs.RootDir = './docs/commands/en-US'
     $PSBPreference.General.ModuleVersion = (dotnet nbgv get-version -f json | ConvertFrom-Json).SimpleVersion
     $PSBPreference.Help.DefaultLocale = 'en-US'
