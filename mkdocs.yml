@@ -37,9 +37,7 @@ theme:
 plugins:
   - search
   - awesome-pages
-  - privacy:
-      assets_exclude:
-        - img.shields.io/*
+  - privacy
   - social:
       cards_layout_options:
         font_family: Dancing Script
@@ -83,5 +81,7 @@ extra:
 
 nav:
   - Home: README.md
+  - Topics:
+    - ... | flat | topics/*.md
   - Commands:
-    - ... | flat | en-US/*.md
+    - ... | flat | commands/en-US/*.md
