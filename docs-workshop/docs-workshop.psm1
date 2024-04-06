@@ -25,4 +25,4 @@ $script:api = @{
     }
 }
 
-$script:dadjokes = [io.file]::ReadAllText((Resolve-Path $PSScriptRoot/jokes-cache.json)) | ConvertFrom-Json
+$script:dadjokes = [io.file]::ReadAllText((Resolve-Path $PSScriptRoot/cache/dadjokes.json)) | ConvertFrom-Json
