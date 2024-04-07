@@ -1,6 +1,4 @@
-# Building Beautiful Docs Workshop
-
-## Welcome
+# Welcome
 
 My name is Josh Hendricks and the contents of this site are intended for use during
 my "Build Beautiful Documentation with platyPS and Material for MkDocs" workshop

@@ -6,6 +6,9 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "powershell.codeFormatting.preset": "OTBS",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     },

@@ -17,9 +17,15 @@ Get-DadJoke [[-JokeId] <String>] [-ProgressAction <ActionPreference>] [<CommonPa
 ```
 
 ## DESCRIPTION
-The `Get-DadJoke` cmdlet gets a random dad joke from icanhazdadjoke.com, it but won't help you "get" the joke. Get it?
+The `Get-DadJoke` cmdlet gets a random dad joke from icanhazdadjoke.com, but it won't help you "get" the joke.
 
-I know, Steven Judd is _much_ better at this 😅
+...
+
+Get it?
+
+🦗🦗
+
+😅 Yeah, [Steven Judd](https://blog.stevenjudd.com/about/) is _much_ better at this.
 
 ## EXAMPLES
 

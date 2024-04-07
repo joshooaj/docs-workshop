@@ -1,0 +1,53 @@
+
+NAME
+    Get-DadJoke
+    
+SYNOPSIS
+    Gets a dad joke from the icanhazdadjoke.com API.
+    
+    
+SYNTAX
+    Get-DadJoke [[-JokeId] <String>] [<CommonParameters>]
+    
+    
+DESCRIPTION
+    Gets a dad joke from the icanhazdadjoke.com API.
+    
+
+PARAMETERS
+    -JokeId <String>
+        Specifies an optional joke Id.
+        
+        Required?                    false
+        Position?                    1
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see
+        about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216). 
+    
+INPUTS
+    
+OUTPUTS
+    DadJoke
+    
+    
+    -------------------------- EXAMPLE 1 --------------------------
+    
+    PS > Get-DadJoke
+    
+    Gets a dad joke, but can't help you "get" the dad joke.
+    
+    
+    
+    
+    
+RELATED LINKS
+    https://icanhazdadjoke.com/api
+
+
+

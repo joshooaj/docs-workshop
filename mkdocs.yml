@@ -1,4 +1,4 @@
-site_name: Building Beautiful Docs Workshop
+site_name: Docs Workshop
 site_description: A small sample project demonstrating one way to generate a docs site for your PowerShell modules.
 site_dir: Output/site
 repo_url: https://github.com/joshooaj/docs-workshop
@@ -37,14 +37,15 @@ theme:
     - content.code.copy           # Add a "copy" button to all code blocks
     - content.code.annotate       # Enable the use of interactive annotations (+) in code blocks
     - content.tabs.link           # Add anchors
-    - toc.integrate               # Integrate table-of-contents into the left-side navigation. ToC is normally rendered on the right
+    #- toc.integrate               # Integrate table-of-contents into the left-side navigation. ToC is normally rendered on the right
     - toc.follow                  # Scrolls the sidebar so that the active anchor is always visible
     - navigation.instant          # Page loads like a single page application (SPA) so clicks are "instant"
     - navigation.instant.progress # On initial page load, a progress ring is shown to indicate when the page load has fully completed
-    - navigation.tabs             # Moves top-level navigation items to the header
-    - navigation.tabs.sticky      # Header navigation sticks to the top of the viewport
+    #- navigation.tabs             # Moves top-level navigation items to the header
+    #- navigation.tabs.sticky      # Header navigation sticks to the top of the viewport
     - navigation.top              # Adds a "Back to the top" button once you've scrolled down a bit
     - navigation.tracking         # Automatically update the url in the address bar based on the highlighted section of the ToC
+    - navigation.indexes
 
 plugins:
   - search
@@ -62,6 +63,7 @@ markdown_extensions:
   - attr_list
   - admonition
   - md_in_html
+  - pymdownx.details # Enables collapsible admonitions
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -80,6 +82,10 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.snippets:
+      base_path:
+        - docs
+      check_paths: true
 
 extra:
   social:
@@ -95,7 +101,14 @@ extra:
 
 nav:
   - Home: README.md
-  - Topics:
-    - ... | flat | topics/*.md
   - Commands:
     - ... | flat | commands/en-US/*.md
+  - Examples:
+      - ... | flat | examples/*.md
+  - MkDocs:
+    - ... | flat | mkdocs/*.md
+  - PlatyPS:
+    - ... | flat | platyps/*.md
+  - Topics:
+    - ... | flat | topics/*.md
+
