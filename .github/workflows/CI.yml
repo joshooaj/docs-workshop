@@ -9,13 +9,13 @@ on:
       - main
     paths-ignore:
       - .github/workflows/Docs.yml
-      - docs/
+      - docs/**
   pull_request:
     branches:
       - main
     paths-ignore:
       - .github/workflows/Docs.yml
-      - docs/
+      - docs/**
 
 jobs:
   build:
