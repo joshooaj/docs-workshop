@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A small sample project demonstrating one way to generate a docs site for your PowerShell modules.">
+        <meta name="description" content="Materials for the "Building Beautiful Docs" workshop at the 2024 PowerShell + DevOps Global Summit.">
       
       
       
@@ -14,13 +14,15 @@
         <link rel="prev" href="../04-update-markdownhelp/">
       
       
+        <link rel="next" href="../../gh-actions/01-actions-intro/">
+      
       
       <link rel="icon" href="../../assets/images/joshooaj.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>99 progressaction - Docs Workshop</title>
+        <title>ProgressActionPreference - Docs Workshop</title>
       
     
     
@@ -55,9 +57,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="99 progressaction - Docs Workshop" >
+        <meta  property="og:title"  content="ProgressActionPreference - Docs Workshop" >
       
-        <meta  property="og:description"  content="A small sample project demonstrating one way to generate a docs site for your PowerShell modules." >
+        <meta  property="og:description"  content="Materials for the "Building Beautiful Docs" workshop at the 2024 PowerShell + DevOps Global Summit." >
       
         <meta  property="og:image"  content="./assets/images/social/platyps/99-progressaction.png" >
       
@@ -71,9 +73,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="99 progressaction - Docs Workshop" >
+        <meta  name="twitter:title"  content="ProgressActionPreference - Docs Workshop" >
       
-        <meta  name="twitter:description"  content="A small sample project demonstrating one way to generate a docs site for your PowerShell modules." >
+        <meta  name="twitter:description"  content="Materials for the "Building Beautiful Docs" workshop at the 2024 PowerShell + DevOps Global Summit." >
       
         <meta  name="twitter:image"  content="./assets/images/social/platyps/99-progressaction.png" >
       
@@ -96,6 +98,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#progressactionpreference" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -128,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              99 progressaction
+              ProgressActionPreference
             
           </span>
         </div>
@@ -284,7 +291,67 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sponsors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sponsors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orientation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Orientation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparation
   </span>
   
 
@@ -313,24 +380,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Commands
+    DadJokes Commands
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Commands
+            DadJokes Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -403,7 +470,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           
@@ -420,8 +487,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Examples
           </label>
@@ -462,10 +529,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -476,8 +543,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             MkDocs
           </label>
@@ -623,10 +690,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -637,8 +704,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             PlatyPS
           </label>
@@ -676,7 +743,7 @@
         
   
   <span class="md-ellipsis">
-    Get-Help
+    Built-in Help
   </span>
   
 
@@ -741,16 +808,90 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ProgressActionPreference
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    99 progressaction
+    ProgressActionPreference
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ignore-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignore it
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-an-older-powershell-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use an older PowerShell version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fork-the-module-and-fix-it-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fork the module and fix it yourself
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -770,16 +911,63 @@
   
   
   
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GitHub Actions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            GitHub Actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../gh-actions/01-actions-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Topics
+    Introduction
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -801,6 +989,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ignore-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignore it
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-an-older-powershell-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use an older PowerShell version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fork-the-module-and-fix-it-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fork the module and fix it yourself
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -818,9 +1058,60 @@
   
 
 
-  <h1>99 progressaction</h1>
-
-
+<h1 id="progressactionpreference">ProgressActionPreference<a class="headerlink" href="#progressactionpreference" title="Permanent link">&para;</a></h1>
+<p>In PowerShell 7.4 a new common parameter was introduced called <code>ProgressActionPreference</code>. You may have noticed that the
+parameter is included in the markdown files generated by PlatyPS when you run <code>New-MarkdownHelp</code> or
+<code>Update-MarkdownHelp</code> when running PowerShell 7.4 or later.</p>
+<p>Normally, PlatyPS will group all common parameters together, including <code>ErrorAction</code>, <code>Verbose</code>, <code>Debug</code>, and so on.
+They show up at the end of each parameter set as <code>[&lt;CommonParameters&gt;]</code> and at the end of the list of parameters:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gu">### CommonParameters</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction,
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>more information, see [<span class="nt">about_CommonParameters</span>](<span class="na">http://go.microsoft.com/fwlink/?LinkID=113216</span>).
+</span></code></pre></div>
+<p>The way PlatyPS determines whether a parameter is a "common parameter" is by checking each parameter name for commands
+in your module returned by <code>Get-Help</code> to see if it matches a name in a hard-coded list of common parameter names in the
+file <code>platyPS.psm1</code>. As of PlatyPS v0.14.2, the list begins on line 104 with <code>Verbose</code>:</p>
+<div class="language-powershell highlight"><span class="filename">platyPS.psm1 (v0.14.2)</span><pre><span></span><code><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99"></a><a href="#__codelineno-1-99"><span class="linenos" data-linenos=" 99 "></span></a>    <span class="k">function</span> <span class="n">isCommonParameterName</span>
+</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100"></a><a href="#__codelineno-1-100"><span class="linenos" data-linenos="100 "></span></a>    <span class="p">{</span>
+</span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101"></a><a href="#__codelineno-1-101"><span class="linenos" data-linenos="101 "></span></a>        <span class="k">param</span><span class="p">(</span><span class="no">[string]</span><span class="nv">$parameterName</span><span class="p">,</span> <span class="no">[switch]</span><span class="nv">$Workflow</span><span class="p">)</span>
+</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102"></a><a href="#__codelineno-1-102"><span class="linenos" data-linenos="102 "></span></a>
+</span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103"></a><a href="#__codelineno-1-103"><span class="linenos" data-linenos="103 "></span></a>        <span class="k">if</span> <span class="p">(@(</span>
+</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104"></a><span class="hll"><a href="#__codelineno-1-104"><span class="linenos" data-linenos="104 "></span></a>                <span class="s1">&#39;Verbose&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105"></a><span class="hll"><a href="#__codelineno-1-105"><span class="linenos" data-linenos="105 "></span></a>                <span class="s1">&#39;Debug&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106"></a><span class="hll"><a href="#__codelineno-1-106"><span class="linenos" data-linenos="106 "></span></a>                <span class="s1">&#39;ErrorAction&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107"></a><span class="hll"><a href="#__codelineno-1-107"><span class="linenos" data-linenos="107 "></span></a>                <span class="s1">&#39;WarningAction&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-108"><a id="__codelineno-1-108" name="__codelineno-1-108"></a><span class="hll"><a href="#__codelineno-1-108"><span class="linenos" data-linenos="108 "></span></a>                <span class="s1">&#39;InformationAction&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-109"><a id="__codelineno-1-109" name="__codelineno-1-109"></a><span class="hll"><a href="#__codelineno-1-109"><span class="linenos" data-linenos="109 "></span></a>                <span class="s1">&#39;ErrorVariable&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-110"><a id="__codelineno-1-110" name="__codelineno-1-110"></a><span class="hll"><a href="#__codelineno-1-110"><span class="linenos" data-linenos="110 "></span></a>                <span class="s1">&#39;WarningVariable&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-111"><a id="__codelineno-1-111" name="__codelineno-1-111"></a><span class="hll"><a href="#__codelineno-1-111"><span class="linenos" data-linenos="111 "></span></a>                <span class="s1">&#39;InformationVariable&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-112"><a id="__codelineno-1-112" name="__codelineno-1-112"></a><span class="hll"><a href="#__codelineno-1-112"><span class="linenos" data-linenos="112 "></span></a>                <span class="s1">&#39;OutVariable&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-113"><a id="__codelineno-1-113" name="__codelineno-1-113"></a><span class="hll"><a href="#__codelineno-1-113"><span class="linenos" data-linenos="113 "></span></a>                <span class="s1">&#39;OutBuffer&#39;</span><span class="p">,</span>
+</span></span><span id="__span-1-114"><a id="__codelineno-1-114" name="__codelineno-1-114"></a><span class="hll"><a href="#__codelineno-1-114"><span class="linenos" data-linenos="114 "></span></a>                <span class="s1">&#39;PipelineVariable&#39;</span>
+</span></span><span id="__span-1-115"><a id="__codelineno-1-115" name="__codelineno-1-115"></a><a href="#__codelineno-1-115"><span class="linenos" data-linenos="115 "></span></a>        <span class="p">)</span> <span class="o">-contains</span> <span class="nv">$parameterName</span><span class="p">)</span> <span class="p">{</span>
+</span><span id="__span-1-116"><a id="__codelineno-1-116" name="__codelineno-1-116"></a><a href="#__codelineno-1-116"><span class="linenos" data-linenos="116 "></span></a>            <span class="k">return</span> <span class="nv">$true</span>
+</span><span id="__span-1-117"><a id="__codelineno-1-117" name="__codelineno-1-117"></a><a href="#__codelineno-1-117"><span class="linenos" data-linenos="117 "></span></a>        <span class="p">}</span>
+</span></code></pre></div>
+<h2 id="solutions">Solutions<a class="headerlink" href="#solutions" title="Permanent link">&para;</a></h2>
+<p>You have roughly four options to deal with this right now:</p>
+<h3 id="ignore-it">Ignore it<a class="headerlink" href="#ignore-it" title="Permanent link">&para;</a></h3>
+<p>When you consider the time scale between now and the heat death of the universe, this is just a momentary annoyance and
+it will be resolved with the release of PlatyPS v2 which is <a href="https://github.com/PowerShell/platyPS/projects/1">in progress</a>.</p>
+<p>Actually, I have no insight into the real status of v2. The PowerShell team are pretty great people, and they're also
+quite busy, so if it doesn't feel like it will be updated before your patience runs out, there are other options...</p>
+<h3 id="use-an-older-powershell-version">Use an older PowerShell version<a class="headerlink" href="#use-an-older-powershell-version" title="Permanent link">&para;</a></h3>
+<p>This might be your easiest option, assuming you don't depend on features only available in PowerShell 7.4. Simply use an
+earlier version of PowerShell until the official PlatyPS module is updated.</p>
+<h3 id="fork-the-module-and-fix-it-yourself">Fork the module and fix it yourself<a class="headerlink" href="#fork-the-module-and-fix-it-yourself" title="Permanent link">&para;</a></h3>
+<p>Finally, you could <a href="https://github.com/PowerShell/platyPS/fork">fork the module</a> and fix it yourself by adding
+<code>ProgressActionPreference</code> to the list of common parameter names in
+<a href="http://localhost:8000/platyps/99-progressaction/#__codelineno-1-114"><code>platyPS.psm1</code></a>. You would then need to...</p>
+<ul>
+<li>Publish your own version of it and install it when you need it</li>
+<li>Copy it into your module as a build dependency</li>
+<li>Use the <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">submodules</a> feature in git to reference your forked
+  PlatyPS repo in your project(s) and make sure to <code>git submodule init</code> and reference the module in your workflow(s).</li>
+</ul>
 
 
 
