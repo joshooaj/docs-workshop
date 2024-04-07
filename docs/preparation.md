@@ -8,9 +8,10 @@ you a clean development environment that you can access in a browser, or remotel
 have to worry about downloading and installing dependencies, or risk running into problems with those dependencies on
 your computer.
 
-I don't think you should see any cost billed to you by GitHub for the use of codespaces during this workshop. However,
-if you are concerned about it, I'll be happy to add you as a collaborator on the repository during the workshop. All I
-need is your GitHub username.
+I don't think you should see any cost billed to you by GitHub for the use of codespaces during this workshop as you get
+up to 60 hours free/month. If you exceed your monthly credit, it would still be a _very small_ amount of money to use
+codespaces for this workshop. A [quick calculation](https://github.com/pricing/calculator) shows a potential cost of
+only ~$0.85 based on 4 hours total usage.
 
 ## Devcontainer
 
