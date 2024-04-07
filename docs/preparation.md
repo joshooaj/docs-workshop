@@ -1,5 +1,7 @@
 # GitHub Codespaces
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/joshooaj/docs-workshop?quickstart=1)
+
 The easiest way for you to follow along during the workshop is to login to GitHub,
 [fork this repository](https://github.com/joshooaj/docs-workshop/fork), and start a GitHub Codespace. This will give
 you a clean development environment that you can access in a browser, or remotely through VSCode. That way you don't
