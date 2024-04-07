@@ -2,7 +2,9 @@
 
 ![Screenshot of MkDocs catalog repo](../assets/images/mkdocs-catalog.png)
 
-There are a bunch of themes for MkDocs - many of them are listed in this [catalog](https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming). Run the following command to install a few to experiment with:
+There are a bunch of themes for MkDocs - many of them are listed in this
+[catalog](https://github.com/mkdocs/catalog?tab=readme-ov-file#-theming). Run the following command to install a few to
+experiment with:
 
 ``` powershell title="Command"
 PS /> pip install mkdocs-terminal mkdocs-dracula-theme mkdocs-simple-blog

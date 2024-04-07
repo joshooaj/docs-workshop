@@ -109,13 +109,15 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ### Step 3: Serve
 
 Let's see what our new MkDocs project looks like as a website! Run the `mkdocs serve` command below, then open a browser
-to [http://localhost:8000/](http://localhost:8000/) or whatever URL is provided to you if you're running this in a GitHub codespace.
+to [http://localhost:8000/](http://localhost:8000/) or whatever URL is provided to you if you're running this in a
+GitHub codespace.
 
 ``` powershell title="Command"
 mkdocs serve -f sandbox/mkdocs.yml # (1)!
 ```
 
-1. mkdocs binds to 127.0.0.1:8000 by default. In some cases you may need to bind on all interfaces, or a different port. Use `--dev-addr 0.0.0.0:8001` to listen for connections on TCP port 8001 on all interfaces for example.
+1. mkdocs binds to 127.0.0.1:8000 by default. In some cases you may need to bind on all interfaces, or a different port.
+Use `--dev-addr 0.0.0.0:8001` to listen for connections on TCP port 8001 on all interfaces for example.
 
 ``` title="Output"
 PS /workspaces/docs-workshop> mkdocs serve -f ./sandbox/mkdocs.yml
@@ -150,4 +152,3 @@ theme:
 ``` powershell
 Remove-Item ./sandbox/docs/, ./sandbox/mkdocs.yml -Recurse
 ```
-
