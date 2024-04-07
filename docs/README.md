@@ -1,13 +1,15 @@
+---
+title: Introduction
+---
+
+![Sessionize banner](assets/images/Hendricks_-_Build_Beautiful_Documentation_with_platyPS_and_Material_for_MkDocs_574274.jpeg)
+
 # Welcome
 
-My name is Josh Hendricks and the contents of this site are intended for use during
-my "Build Beautiful Documentation with platyPS and Material for MkDocs" workshop
-on Monday, April 8th 2024 at the [PowerShell + DevOps Summit](https://www.powershellsummit.org/)
-in Bellevue, WA.
+It has never been easier to build and publish professional documentation that is as __functional__ as it is __beautiful__.
+Open up your laptop and allow me to introduce you to my favorite tools for building visualy appealing, responsive,
+searchable online documentation.
 
-## Synopsis
-
-It has never been easier to build and publish documentation that is as functional
-as it is beautiful. Bring your laptop, and together we’ll take a bare-bones, boring
-PowerShell project and generate visually appealing, responsive, searchable, online
-documentation.
+My name is Josh Hendricks, and I'm a Senior Principal Engineer at Milestone Systems where I work with a great team of
+developers. I have a wide range of experience but PowerShell has been my absolute most favorite area of work ever since
+I started using it in 2019 when I began building the [MilestonePSTools](https://www.milestonepstools.com) module.

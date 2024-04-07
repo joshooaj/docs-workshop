@@ -1,5 +1,5 @@
 site_name: Docs Workshop
-site_description: A small sample project demonstrating one way to generate a docs site for your PowerShell modules.
+site_description: Materials for the "Building Beautiful Docs" workshop at the 2024 PowerShell + DevOps Global Summit.
 site_dir: Output/site
 repo_url: https://github.com/joshooaj/docs-workshop
 remote_branch: gh-pages
@@ -100,8 +100,11 @@ extra:
       name: joshooaj on GitHub
 
 nav:
-  - Home: README.md
-  - Commands:
+  - Introduction: README.md
+  - Sponsors: sponsors.md
+  - Orientation: orientation.md
+  - Preparation: preparation.md
+  - DadJokes Commands:
     - ... | flat | commands/en-US/*.md
   - Examples:
       - ... | flat | examples/*.md
@@ -109,6 +112,5 @@ nav:
     - ... | flat | mkdocs/*.md
   - PlatyPS:
     - ... | flat | platyps/*.md
-  - Topics:
-    - ... | flat | topics/*.md
-
+  - GitHub Actions:
+    - ... | flat | gh-actions/*.md

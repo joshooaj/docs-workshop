@@ -1,4 +1,4 @@
-# Get-Help
+# Built-in Help
 
 With the the `dadjokes` module imported, you can get help in the terminal with the `Get-Help` command.
 The help system is one of the many neat features of PowerShell. The format of help for every function

@@ -3,6 +3,8 @@
     // for the documentation about the extensions.json format
     "recommendations": [
         "ms-vscode.PowerShell",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker"
     ]
 }

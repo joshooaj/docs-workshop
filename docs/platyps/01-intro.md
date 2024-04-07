@@ -27,12 +27,3 @@ New-ModuleManifest @moduleParams
 Import-Module ./sandbox/dadjokes/ -PassThru
 
 ```
-
-## ICanHazMarkdown?
-
-You should now have a "dadjokes" folder under `./sandbox/` with a `dadjokes.psm1` and `dadjokes.psd1` file. Run
-the following command to generate some markdown help files for your module:
-
-``` powershell
-New-MarkdownHelp -Module dadjokes -OutputFolder ./sandbox/docs/commands -Force
-```

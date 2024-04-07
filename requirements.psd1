@@ -23,6 +23,9 @@
     'PSScriptAnalyzer'   = @{
         Version = '1.21.0'
     }
+    'platyps'   = @{
+        Version = '0.14.2'
+    }
     'PythonRequirements' = @{
         DependencyType = 'Command'
         Source         = 'pip install -qr requirements.txt --cache-dir .cache/pip/ --force-reinstall'
