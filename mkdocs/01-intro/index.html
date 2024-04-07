@@ -1106,11 +1106,13 @@ a single <code>index.md</code> file.</p>
 </span></code></pre></div>
 <h3 id="step-3-serve">Step 3: Serve<a class="headerlink" href="#step-3-serve" title="Permanent link">&para;</a></h3>
 <p>Let's see what our new MkDocs project looks like as a website! Run the <code>mkdocs serve</code> command below, then open a browser
-to <a href="http://localhost:8000/">http://localhost:8000/</a> or whatever URL is provided to you if you're running this in a GitHub codespace.</p>
+to <a href="http://localhost:8000/">http://localhost:8000/</a> or whatever URL is provided to you if you're running this in a
+GitHub codespace.</p>
 <div class="language-powershell highlight"><span class="filename">Command</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">mkdocs</span> <span class="n">serve</span> <span class="o">-f</span> <span class="n">sandbox</span><span class="p">/</span><span class="n">mkdocs</span><span class="p">.</span><span class="n">yml</span> <span class="c"># (1)!</span>
 </span></code></pre></div>
 <ol>
-<li>mkdocs binds to 127.0.0.1:8000 by default. In some cases you may need to bind on all interfaces, or a different port. Use <code>--dev-addr 0.0.0.0:8001</code> to listen for connections on TCP port 8001 on all interfaces for example.</li>
+<li>mkdocs binds to 127.0.0.1:8000 by default. In some cases you may need to bind on all interfaces, or a different port.
+Use <code>--dev-addr 0.0.0.0:8001</code> to listen for connections on TCP port 8001 on all interfaces for example.</li>
 </ol>
 <div class="language-text highlight"><span class="filename">Output</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>PS /workspaces/docs-workshop&gt; mkdocs serve -f ./sandbox/mkdocs.yml
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>INFO    -  Building documentation...
