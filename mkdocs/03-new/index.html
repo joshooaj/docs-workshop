@@ -1014,34 +1014,34 @@
 <p><img alt="Screenshot of new mkdocs project hierarchy" src="../../assets/images/mkdocs-starter-site.png" /></p>
 <h2 id="mkdocs-new">mkdocs new<a class="headerlink" href="#mkdocs-new" title="Permanent link">&para;</a></h2>
 <p>Create a new MkDocs project in the sandbox folder with the <code>mkdocs new</code> command:</p>
-<div class="language-powershell highlight"><span class="filename">Command</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">mkdocs</span> <span class="n">new</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span>
-</span></code></pre></div>
+<div class="highlight"><span class="filename">Command</span><pre><span></span><code><span class="n">mkdocs</span> <span class="n">new</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span>
+</code></pre></div>
 <div class="result">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>INFO    -  Writing config file: ./sandbox/mkdocs.yml
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>INFO    -  Writing initial docs: ./sandbox/docs/index.md
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>INFO    -  Writing config file: ./sandbox/mkdocs.yml
+INFO    -  Writing initial docs: ./sandbox/docs/index.md
+</code></pre></div>
 <p>Your <code>sandbox</code> directory should now have an <code>mkdocs.yml</code> file, and a <code>docs/</code>
 folder with a single <code>index.md</code> file:</p>
-<div class="language-yaml highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Docs</span>
-</span></code></pre></div>
-<div class="language-yaml highlight"><span class="filename">docs/index.md</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Welcome to MkDocs</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="l l-Scalar l-Scalar-Plain">For full documentation visit [mkdocs.org](https://www.mkdocs.org).</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="l l-Scalar l-Scalar-Plain">## Commands</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="l l-Scalar l-Scalar-Plain">* `mkdocs new [dir-name]` - Create a new project.</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="l l-Scalar l-Scalar-Plain">* `mkdocs serve` - Start the live-reloading docs server.</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="l l-Scalar l-Scalar-Plain">* `mkdocs build` - Build the documentation site.</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="l l-Scalar l-Scalar-Plain">* `mkdocs -h` - Print help message and exit.</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="l l-Scalar l-Scalar-Plain">## Project layout</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span><span class="w">    </span><span class="c1"># The configuration file.</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">docs/</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w">  </span><span class="c1"># The documentation homepage.</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w">       </span><span class="c1"># Other markdown pages, images and other files.</span>
-</span></code></pre></div>
+<div class="highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Docs</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">docs/index.md</span><pre><span></span><code><span class="c1"># Welcome to MkDocs</span>
+
+<span class="l l-Scalar l-Scalar-Plain">For full documentation visit [mkdocs.org](https://www.mkdocs.org).</span>
+
+<span class="l l-Scalar l-Scalar-Plain">## Commands</span>
+
+<span class="l l-Scalar l-Scalar-Plain">* `mkdocs new [dir-name]` - Create a new project.</span>
+<span class="l l-Scalar l-Scalar-Plain">* `mkdocs serve` - Start the live-reloading docs server.</span>
+<span class="l l-Scalar l-Scalar-Plain">* `mkdocs build` - Build the documentation site.</span>
+<span class="l l-Scalar l-Scalar-Plain">* `mkdocs -h` - Print help message and exit.</span>
+
+<span class="l l-Scalar l-Scalar-Plain">## Project layout</span>
+
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span><span class="w">    </span><span class="c1"># The configuration file.</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">docs/</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w">  </span><span class="c1"># The documentation homepage.</span>
+<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w">       </span><span class="c1"># Other markdown pages, images and other files.</span>
+</code></pre></div>
 </div>
 <h2 id="mkdocs-serve">mkdocs serve<a class="headerlink" href="#mkdocs-serve" title="Permanent link">&para;</a></h2>
 <p>Run the <code>mkdocs serve</code> command below, then open a browser to <a href="http://localhost:8000/">http://localhost:8000/</a>
@@ -1054,18 +1054,18 @@ in realtime!</strong></p>
 instead of the default of port 8000 on localhost. Add include the argument <code>--dev-addr 0.0.0.0:8080</code> to bind to all
 interfaces on port 8080 for example.</p>
 </details>
-<div class="language-powershell highlight"><span class="filename">Command</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">mkdocs</span> <span class="n">serve</span> <span class="o">-f</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span><span class="n">mkdocs</span><span class="p">.</span><span class="n">yml</span>
-</span></code></pre></div>
+<div class="highlight"><span class="filename">Command</span><pre><span></span><code><span class="n">mkdocs</span> <span class="n">serve</span> <span class="o">-f</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span><span class="n">mkdocs</span><span class="p">.</span><span class="n">yml</span>
+</code></pre></div>
 <div class="result">
-<div class="language-text highlight"><span class="filename">Output</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>INFO    -  Building documentation...
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>INFO    -  Cleaning site directory
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>INFO    -  Documentation built in 0.28 seconds
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>INFO    -  [19:58:02] Watching paths for changes: &#39;sandbox/docs&#39;, &#39;sandbox/mkdocs.yml&#39;
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>INFO    -  [19:58:02] Serving on http://127.0.0.1:8000/
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>INFO    -  [19:58:25] Browser connected: http://localhost:8000/
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>INFO    -  [19:58:28] Browser connected: http://localhost:8000/
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>INFO    -  [20:06:41] Browser connected: http://localhost:8000/
-</span></code></pre></div>
+<div class="highlight"><span class="filename">Output</span><pre><span></span><code>INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+INFO    -  Documentation built in 0.28 seconds
+INFO    -  [19:58:02] Watching paths for changes: &#39;sandbox/docs&#39;, &#39;sandbox/mkdocs.yml&#39;
+INFO    -  [19:58:02] Serving on http://127.0.0.1:8000/
+INFO    -  [19:58:25] Browser connected: http://localhost:8000/
+INFO    -  [19:58:28] Browser connected: http://localhost:8000/
+INFO    -  [20:06:41] Browser connected: http://localhost:8000/
+</code></pre></div>
 </div>
 
 

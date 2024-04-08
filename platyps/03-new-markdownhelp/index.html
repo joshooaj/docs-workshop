@@ -1003,9 +1003,9 @@ is to let PlatyPS generate markdown-based versions of your existing help.</p>
 <h2 id="icanhazmarkdown">ICanHazMarkdown?<a class="headerlink" href="#icanhazmarkdown" title="Permanent link">&para;</a></h2>
 <p>The following commands will import the dadjokes module (if it's not already imported)
 and then generate two markdown files - one for each function in the module.</p>
-<div class="language-powershell highlight"><span class="filename">Command</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Import-Module</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span><span class="n">dadjokes</span><span class="p">/</span> <span class="n">-PassThru</span> <span class="c"># (1)!</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">New-MarkdownHelp</span> <span class="n">-Module</span> <span class="n">dadjokes</span> <span class="n">-OutputFolder</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span><span class="n">docs</span><span class="p">/</span><span class="n">commands</span> <span class="n">-Force</span> <span class="c"># (2)!</span>
-</span></code></pre></div>
+<div class="highlight"><span class="filename">Command</span><pre><span></span><code><span class="nb">Import-Module</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span><span class="n">dadjokes</span><span class="p">/</span> <span class="n">-PassThru</span> <span class="c"># (1)!</span>
+<span class="nb">New-MarkdownHelp</span> <span class="n">-Module</span> <span class="n">dadjokes</span> <span class="n">-OutputFolder</span> <span class="p">./</span><span class="n">sandbox</span><span class="p">/</span><span class="n">docs</span><span class="p">/</span><span class="n">commands</span> <span class="n">-Force</span> <span class="c"># (2)!</span>
+</code></pre></div>
 <ol>
 <li>A module needs to be imported for PlatyPS to "see" it. It will be auto-loaded
    if necessary, but in this case our module isn't installed so we need to import
