@@ -1,7 +1,7 @@
 ---
 external help file: docs-workshop-help.xml
 Module Name: docs-workshop
-online version:
+online version: https://www.joshooaj.com/docs-workshop/commands/en-US/Get-DadJoke/
 schema: 2.0.0
 ---
 
