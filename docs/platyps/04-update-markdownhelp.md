@@ -33,7 +33,7 @@ parameter on line 34.
 
 ``` powershell title="Command"
 Import-Module ./sandbox/dadjokes/ -Force -PassThru # (1)!
-New-MarkdownHelp -Module dadjokes -OutputFolder ./sandbox/docs/commands -Force # (2)!
+Update-MarkdownHelp -Path ./sandbox/docs/commands/Get-DadJoke.md # (2)!
 ```
 
 1. A module needs to be imported for PlatyPS to "see" it. And if it was already
