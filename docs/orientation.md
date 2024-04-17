@@ -4,6 +4,7 @@ title: Orientation
 
 # Scaffolding
 
+
 ![Screenshot of PowerShell terminal with the output of Find-DadJoke](../../assets/images/trowel.png){align="right" width="150"}
   
 The structure of this module and repository was scaffolded using [PSStucco](https://github.com/jimbrig/PSStucco) by
